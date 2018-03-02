@@ -66,44 +66,11 @@
 </head>
 <body>
 <div class="flex-center position-ref full-height">
-    <h4>Welcome to laravel</h4>
-
-    <table>
-        <thead>
-        <tr>
-            <th>Id</th>
-            <th>Name</th>
-            <th>Mobile</th>
-            <th>Email</th>
-            <th>Line1</th>
-        </tr>
-        </thead>
-        <tbody>
-            @foreach($users as $user)
-                <tr>
-                <td>{{$user->id}}</td>
-                <td>{{$user->name}}</td>
-                <td>{{$user->mobile}}</td>
-                <td>{{$user->email}}</td>
-                <td>{{$user->address[0]['line1']}}</td>
-                </tr>
-                @endforeach
-        </tbody>
-    </table>
-
-    {{--<div class="content">--}}
-    {{--<div class="title m-b-md">--}}
-    {{--Laravel--}}
-    {{--</div>--}}
-
-    {{--<div class="links">--}}
-    {{--<a href="https://laravel.com/docs">Documentation</a>--}}
-    {{--<a href="https://laracasts.com">Laracasts</a>--}}
-    {{--<a href="https://laravel-news.com">News</a>--}}
-    {{--<a href="https://forge.laravel.com">Forge</a>--}}
-    {{--<a href="https://github.com/laravel/laravel">GitHub</a>--}}
-    {{--</div>--}}
-    {{--</div>--}}
+    <div class="content">
+        <div class="title m-b-md">
+          <h3>This Welcome Mail</h3>
+        </div>
+    </div>
 </div>
 </body>
 </html>
