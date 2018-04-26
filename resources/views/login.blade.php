@@ -65,23 +65,14 @@
     </style>
 </head>
 <body>
+<div class="flex-center position-ref full-height">
     <h4>Welcome to laravel</h4>
-    <br>
-    <br>
-    <a href="{{route('login')}}" class="">Login</a>
-    <table>
-        <thead>
-        <tr>
-            <th>Id</th>
-            <th>Name</th>
-            <th>Mobile</th>
-            <th>Email</th>
-            <th>Line1</th>
-        </tr>
-        </thead>
-        <tbody>
-
-        </tbody>
-    </table>
+    <form action="{{route('login.submit')}}" method="post">
+        Username : <input type="text" name="email" placeholder="enter email">
+        <br>
+        Password : <input type="text" name="password" placeholder="enter password">
+        <input type="submit" value="Login">
+    </form>
+</div>
 </body>
 </html>
