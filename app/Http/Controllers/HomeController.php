@@ -9,6 +9,12 @@ use Auth;
 
 class HomeController extends Controller
 {
+
+    public function home()
+    {
+        return view('pages.home');
+    }
+
     public function getUser()
     {
         $users = User::orderBy('id','asc')
